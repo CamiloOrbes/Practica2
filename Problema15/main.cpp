@@ -1,10 +1,15 @@
+/*Problema 15 Elaborar un programa que permita hallar la interseccion entre un par de rectangulos. Represente los rectangulos como arreglos de 4 
+*/
 #include <iostream>
 
 using namespace std;
-
+void rec_int(int *A,int *B,int *C);
 int main()
 {
     int A[4], B[4], C[4];
+    rec_int(A,B,C);
+}
+void rec_int(int *A,int *B,int *C){
 
     for (int i=1 ; i<=2 ; i++){
 
@@ -59,5 +64,6 @@ int main()
         cout << C[i] <<"  ";
     }
 
-    return 0;
+
 }
+
