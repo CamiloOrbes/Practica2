@@ -5,22 +5,27 @@
 
 using namespace std;
 
-int compara_pala(char*str1, char*str2);
+bool compara_pala(char*str1, char*str2);
 
 int main()
-{
+{   
+    bool result;
     char str1[]={"Palabra"};
     char str2[]={"palabra"};
-    compara_pala(str1,str2);
-
-}
-
-int compara_pala(char *str1, char *str2){
-    if(str1==str2){
+    result = compara_pala(str1,str2);
+    if (result==true){
         cout<<"Son iguales "<<endl;
     }
-    else{
+    else if(result==false){
         cout<<"Son diferentes "<<endl;
-}
+    }
 }
 
+bool compara_pala(char *str1, char *str2){
+    if(str1==str2){
+        return true;
+    }
+    else{
+        return false;
+}
+}
