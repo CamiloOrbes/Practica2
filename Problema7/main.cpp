@@ -1,13 +1,25 @@
+//Problema 7 El usuario debe ingresar una cadena de caracteres y se debe retornar la cadena de caracteres pero sin caracteres repetidos
+
+
 #include <iostream>
 
 using namespace std;
+void quit_let( string x);
 
 int main()
 {
-    int c=0;
+
+
     string x;
     cout<< "Ingrese una palabra: " << endl;
     cin>>x;
+    quit_let(x);
+
+    return 0;
+
+}
+void quit_let(string x){
+    int c=0;
     char a[x.size()]="";
     for (unsigned int i=0 ; i<=(x.size()); i=i+1){ //unsigned es para que no me tome valores negativos
         for(int k=0; k<=c; k=k+1){                 //En los for se van recorriendo tanto el string como el arreglo vacio
@@ -21,7 +33,4 @@ int main()
         }
     }
     cout<<"La cadena original es: "<<x<<"La cadena sin caracteres es: "<<a<<endl;
-    return 0;
-
 }
-
