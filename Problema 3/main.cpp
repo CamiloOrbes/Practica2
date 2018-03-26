@@ -1,3 +1,6 @@
+//Problema 3 comparar 2 cadenas de carecteres, y retorne un valor logico.
+
+
 #include <iostream>
 
 using namespace std;
